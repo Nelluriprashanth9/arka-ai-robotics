@@ -178,5 +178,13 @@ display:none;
 .hero h1{
 font-size:32px;
 }
-
+.logo img{
+height:45px;
+width:auto;
+}
+.hero-logo{
+height:150px;
+margin-bottom:20px;
+}
+  
 }
