@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Schools | ARKA AI ROBOTICS</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script src="../assets/js/script.js" defer></script>
+</head>
+
+<body class="schools-page">
+
+<nav class="top-nav">
+<div class="nav-container">
+<div class="logo">
+<a href="../index.html">
+<img src="../images/logo.png" alt="Arka AI Robotics Logo">
+</a>
+</div>
+<div class="nav-links">
+<a href="../index.html#about">About</a>
+<a href="../index.html#programs">Programs</a>
+<a href="projects.html">Projects</a>
+<a href="for-schools.html" class="is-current">For Schools</a>
+<a href="../index.html#contact" class="nav-btn">Contact Us</a>
+</div>
+</div>
+</nav>
+
+<header class="schools-hero">
+<div class="container schools-hero-shell">
+<div class="schools-hero-copy">
+<p class="schools-kicker">School Programs</p>
+<h1>Flexible Learning Plans For Schools And Management Teams</h1>
+<p>Choose a short-term program, a longer engagement, or a school club model. Schools can select one or more options based on their calendar, student age group, and learning goals.</p>
+<div class="btn-group">
+<a href="#school-options" class="btn btn-primary">View Options</a>
+<a href="#school-inquiry" class="btn btn-dark">Send School Inquiry</a>
+</div>
+</div>
+<div class="schools-hero-panel">
+<p class="schools-panel-label">Ideal for</p>
+<ul>
+<li>Monthly enrichment programs</li>
+<li>Quarterly school partnerships</li>
+<li>Semester-long innovation tracks</li>
+<li>Management-requested school clubs</li>
+</ul>
+</div>
+</div>
+</header>
+
+<section id="school-options" class="school-options-section">
+<div class="container school-options-shell">
+<h2>Select The Program Type Your School Needs</h2>
+<p class="school-options-intro">Schools can choose one program format. The selected option will appear directly in the inquiry form below.</p>
+
+<div class="school-offers-grid" id="school-offers-grid">
+<button class="school-offer-card" type="button" data-school-offer="1 Month Program" aria-pressed="false">
+<p class="school-offer-duration">1 Month</p>
+<h3>Starter School Program</h3>
+<p>A focused introduction to robotics, coding, AI, or STEM with weekly sessions and a simple showcase outcome.</p>
+</button>
+
+<button class="school-offer-card" type="button" data-school-offer="3 Months Program" aria-pressed="false">
+<p class="school-offer-duration">3 Months</p>
+<h3>Term-Based Learning Track</h3>
+<p>A deeper school engagement with structured progression, student practice, and project-based learning milestones.</p>
+</button>
+
+<button class="school-offer-card" type="button" data-school-offer="6 Months Program" aria-pressed="false">
+<p class="school-offer-duration">6 Months</p>
+<h3>Advanced Semester Program</h3>
+<p>A longer partnership model with curriculum alignment, mentor support, and measurable student outcomes.</p>
+</button>
+
+<button class="school-offer-card" type="button" data-school-offer="School Club On Management Request" aria-pressed="false">
+<p class="school-offer-duration">On Request</p>
+<h3>School Club Model</h3>
+<p>A custom club for innovation, robotics, coding, or AI created in coordination with school management.</p>
+</button>
+</div>
+</div>
+</section>
+
+<section id="school-inquiry" class="school-inquiry-section">
+<div class="container school-inquiry-shell">
+<div class="school-inquiry-copy">
+<p class="school-form-kicker">School Inquiry</p>
+<h2>Tell Us What Your School Selected</h2>
+<p>The form below captures the program choices your school has selected, so your team and our team stay aligned.</p>
+<div class="school-selection-summary">
+<p class="school-selection-label">Selected Option</p>
+<p id="school-selection-summary-text">No option selected yet. Choose one plan above.</p>
+</div>
+</div>
+
+<form class="contact-form school-form" id="school-program-form" action="https://formsubmit.co/prashanthnellurivolgs@gmail.com" method="post" data-success-url="../thanks.html">
+<input type="hidden" name="_subject" value="New School Program Request - Arka AI Robotics">
+<input type="hidden" name="_template" value="table">
+<input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none">
+<input type="hidden" name="selected_school_programs" id="selected-school-programs" value="">
+<div class="form-grid">
+<label>
+School Name
+<input type="text" name="school_name" placeholder="Enter school name" required>
+</label>
+<label>
+Contact Person
+<input type="text" name="contact_person" placeholder="Enter contact person name" required>
+</label>
+<label>
+Email
+<input type="email" name="email" placeholder="Enter school email" required>
+</label>
+<label>
+Phone Number
+<input type="tel" name="phone" placeholder="Enter phone number" required>
+</label>
+<label>
+City
+<input type="text" name="city" placeholder="Enter city" required>
+</label>
+<label>
+Student Strength
+<input type="text" name="student_strength" placeholder="Approximate number of students" required>
+</label>
+</div>
+<label class="message-field">
+Programs Chosen
+<textarea id="school-programs-display" rows="3" readonly placeholder="Selected programs will appear here"></textarea>
+</label>
+<label class="message-field">
+School Requirements
+<textarea name="school_requirements" rows="5" placeholder="Share grades, timeline, goals, or special requests" required></textarea>
+</label>
+<p class="form-status" aria-live="polite"></p>
+<button type="submit" class="btn btn-primary">Submit School Request</button>
+</form>
+</div>
+</section>
+
+<footer class="site-footer">
+<p>&copy; 2026 Arka AI Robotics. All Rights Reserved.</p>
+</footer>
+
+<nav class="bottom-nav" aria-label="Mobile navigation">
+<a href="../index.html#about">About</a>
+<a href="../index.html#programs">Programs</a>
+<a href="projects.html">Projects</a>
+<a href="for-schools.html" class="is-current">For Schools</a>
+<a href="../index.html#contact">Contact</a>
+</nav>
+
+</body>
+</html>
