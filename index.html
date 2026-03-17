@@ -17,7 +17,12 @@
 <div class="logo">
 <img src="images/nav_logo.png" alt="Arka AI Robotics Logo">
 </div>
-<div class="nav-links">
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<div class="nav-links" id="primary-nav">
 <a href="#about">About</a>
 <a href="#programs">Programs</a>
 <a href="pages/projects.html">Projects</a>
@@ -61,111 +66,37 @@ Arka AI Robotics is a technology-driven education initiative dedicated to prepar
 <h2>Our Educational Programs</h2>
 <div class="programs-grid">
 
-<div class="program-item">
-<button class="program-card" type="button" data-program="robotics" aria-pressed="false">
+<div class="program-card">
 <div class="program-icon">🤖</div>
 <h3>Robotics Workshops</h3>
 <p>Students learn robotics fundamentals and build real robots.</p>
-</button>
 </div>
 
-<div class="program-item">
-<button class="program-card" type="button" data-program="coding" aria-pressed="false">
+<div class="program-card">
 <div class="program-icon">💻</div>
 <h3>Coding & Scratch</h3>
 <p>Interactive coding and game development.</p>
-</button>
 </div>
 
-<div class="program-item">
-<button class="program-card" type="button" data-program="ai" aria-pressed="false">
+<div class="program-card">
 <div class="program-icon">🧠</div>
 <h3>AI for Students</h3>
 <p>Introduction to artificial intelligence concepts.</p>
-</button>
 </div>
 
-<div class="program-item">
-<button class="program-card" type="button" data-program="stem" aria-pressed="false">
+<div class="program-card">
 <div class="program-icon">🔬</div>
 <h3>STEM Innovation</h3>
 <p>Hands-on engineering projects.</p>
-</button>
 </div>
 
-</div>
-
-<div class="program-detail" id="program-detail-panel" style="display:none;">
-<div class="program-detail-copy">
-<p class="program-detail-kicker">Featured Program</p>
-<h3 class="program-detail-title"></h3>
-<p class="program-detail-description"></p>
-<ul class="program-detail-points"></ul>
-</div>
-<div class="program-detail-media">
-<div class="program-media-card">
-<p class="program-media-label">Program Image</p>
-<img class="program-detail-image" src="" alt="">
-</div>
-<div class="program-media-card program-video-card">
-<p class="program-media-label">Program Video</p>
-<div class="program-video-placeholder program-detail-video"></div>
-</div>
-</div>
-</div>
 </div>
 </section>
 
 <section id="contact" class="contact-section">
 <div class="container">
 <h2>Get in Touch</h2>
-<p class="contact-intro">Tell us about your school, program interest, or partnership idea and we will get back to you.</p>
-<div class="contact-layout">
-<div class="contact-details">
-<h3>Contact Information</h3>
-<p>Email: <a href="mailto:prashanthnellurivolgs@gmail.com">prashanthnellurivolgs@gmail.com</a></p>
-<p>Phone: <a href="tel:+10000000000">+1 000 000 0000</a></p>
-<p>Location: Placeholder address for Arka AI Robotics</p>
-</div>
-<form class="contact-form" id="contact-form" action="https://formsubmit.co/prashanthnellurivolgs@gmail.com" method="post" data-success-url="thanks.html">
-<input type="hidden" name="_subject" value="New Website Inquiry - Arka AI Robotics">
-<input type="hidden" name="_template" value="table">
-<input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none">
-<div class="form-grid">
-<label>
-First Name
-<input type="text" name="first_name" placeholder="Enter your first name" required>
-</label>
-<label>
-Last Name
-<input type="text" name="last_name" placeholder="Enter your last name" required>
-</label>
-<label>
-Email
-<input type="email" name="email" placeholder="Enter your email" required>
-</label>
-<label>
-Phone Number
-<input type="tel" name="phone" placeholder="Enter your phone number">
-</label>
-<label>
-School / Organization
-<input type="text" name="organization" placeholder="Enter school or organization name">
-</label>
-<label>
-Program Interest
-<input type="text" name="interest" placeholder="AI, Robotics, STEM, Coding..." required>
-</label>
-</div>
-<label class="message-field">
-Message
-<textarea name="message" rows="5" placeholder="Tell us what you are looking for" required></textarea>
-</label>
-<p class="form-status" aria-live="polite"></p>
-<button type="submit" class="btn btn-primary">Send Inquiry</button>
-</form>
-</div>
-</div>
+<p>Email: connect@arkarobotics.org</p>
 </section>
 
 <footer class="site-footer">

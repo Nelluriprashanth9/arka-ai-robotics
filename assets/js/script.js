@@ -1,5 +1,8 @@
 
 document.addEventListener('DOMContentLoaded', () => {
+const topNav = document.querySelector('.top-nav');
+const navToggle = document.querySelector('.nav-toggle');
+const navLinksContainer = document.querySelector('.nav-links');
 const programContent = {
 robotics: {
 title: 'Robotics Workshops',
@@ -52,6 +55,20 @@ video: 'Add STEM innovation demo video here'
 };
 
 const links = document.querySelectorAll('a[href^="#"]');
+
+if (topNav && navToggle && navLinksContainer) {
+navToggle.addEventListener('click', () => {
+const isOpen = topNav.classList.toggle('menu-open');
+navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+});
+
+navLinksContainer.querySelectorAll('a').forEach(link => {
+link.addEventListener('click', () => {
+topNav.classList.remove('menu-open');
+navToggle.setAttribute('aria-expanded', 'false');
+});
+});
+}
 
 links.forEach(link => {
 link.addEventListener('click', function(e) {
